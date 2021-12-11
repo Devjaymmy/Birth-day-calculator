@@ -22,23 +22,30 @@
       background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
     "
   >
-    <div class="navbar" id="nav__bar">
+    <div class="navbar" id="nav_bar">
       <label for="logo" id="logo">Dev-Jaymmy solutions</label>
-      <div class="nav" id="nav__menu">
-        <ul class="menu" id="menu__list">
-          <li id="home__menu"><a href="#home">home</a></li>
-          <li id="home__menu"><a href="#one">about</a></li>
-          <li id="home__menu"><a href="#table__column">Akan-table</a></li>
-          <li id="home__menu"><a href="#form__column">execute</a></li>
-          <li id="home__menu"><a href="#FAQ">FAQ</a></li>
-        </ul>
+      <div class="nav-function" id="menu-bars">
+        <div class="nav-togglebar"></div>
+        <div class="nav-togglebar"></div>
+        <div class="nav-togglebar"></div>
       </div>
+
+      <!-- <div class="nav" id="nav_menu"> -->
+      <ul class="menu" id="menu_list">
+        <li id="home__menu"><a href="#home">home</a></li>
+        <li id="home__menu"><a href="#one">about</a></li>
+        <li id="home__menu"><a href="#table__column">Akan-table</a></li>
+        <li id="home__menu"><a href="#form__column">execute</a></li>
+        <li id="home__menu"><a href="#FAQ">FAQ</a></li>
+      </ul>
     </div>
-    <h5>
+    <!-- </div> -->
+    <h5 id="heading">
       Tired of scrolling through the calendar to find the day of the week you
-      were born? Say no more because we got you covered :
+      were born? Say no more because we got you covered; Use this simple tool to
+      find the day of the week you were born: Bella ciao !!!
     </h5>
-    <div id="container__id" class="container">
+    <div id="container_id" class="container">
       <div id="row__id" class="row">
         <div id="one" class="col">
           <ul>
@@ -71,7 +78,22 @@
         </div>
       </div>
     </div>
-    <h4 style="text-align: center; margin-top: 3rem">
+    <h4
+      style="
+        text-align: center;
+        margin-top: 3rem;
+        background: #1e9600; /* fallback for old browsers */
+        background: linear-gradient(
+          to right,
+          #833ab4,
+          #fd1d1d,
+          #fcb045
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      "
+    >
       Akan names according to days
     </h4>
     <div class="container" id="table">
@@ -119,7 +141,7 @@
               <td>Ama</td>
             </tr>
           </table>
-          <h5>Dev-Jaymmy desktop page</h5>
+          <h5 id="onlydesktop">Dev-Jaymmy desktop page</h5>
         </div>
       </div>
     </div>
@@ -150,7 +172,7 @@
             min="1900"
             step="4"
             max="2022"
-            maxlength="2"
+            maxlength="4"
             placeholder="year of birth"
           />
           <br />

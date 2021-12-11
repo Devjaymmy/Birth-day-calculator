@@ -1,3 +1,11 @@
+var toggleBar = document.querySelector("#menu-bars");
+var toggleList = document.querySelector(".menu");
+
+toggleBar.addEventListener("click", function () {
+  toggleBar.classList.toggle("is-active");
+  toggleList.classList.toggle("active");
+});
+
 function akhaName() {
   var DD = parseInt(document.getElementById("date").value);
   var MM = parseInt(document.getElementById("month").value);

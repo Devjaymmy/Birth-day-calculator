@@ -14,6 +14,7 @@
 #logo {
   font-size: 30px;
   padding-left: 5rem;
+  z-index: 1;
   background: #1e9600; /* fallback for old browsers */
   background: linear-gradient(
     to right,
@@ -25,29 +26,47 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.nav {
-  text-align: right;
+.menu {
+  /* text-align: right; */
   transition: all 0.4s ease;
-  padding-right: 5%;
+  /* padding-right: 5%; */
 }
-.nav ul {
+.menu {
   float: right;
-  flex: 1;
   justify-content: space-between;
 }
-.nav ul li {
+.menu li {
   display: inline-block;
   margin: 20px;
   cursor: pointer;
 }
-.nav ul li a {
+.menu li a {
   text-decoration: none;
   color: #fff;
   cursor: pointer;
 }
-.nav ul li a:hover {
+.menu li a:hover {
   color: blueviolet;
   cursor: pointer;
+}
+#heading {
+  padding: 5%;
+
+  background: #1e9600; /* fallback for old browsers */
+  background: linear-gradient(
+    to right,
+    #f12711,
+    #f51919e0,
+    #833ab4,
+    #fd1d1d,
+    #fcb045
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#container_id {
+  margin-top: auto;
 }
 #one {
   background: #b92b27; /* fallback for old browsers */
@@ -74,8 +93,9 @@
   cursor: pointer;
   text-align: center;
 }
-#one h4 {
+#one ul li {
   color: white;
+  font-size: 14px;
 }
 #one:hover {
   height: 18rem;
@@ -105,8 +125,9 @@
   cursor: pointer;
   text-align: center;
 }
-#two h4 {
+#two ul li {
   color: white;
+  font-size: 14px;
 }
 #two:hover {
   height: 18rem;
@@ -136,11 +157,14 @@
   cursor: pointer;
   text-align: center;
 }
-#three h4 {
+#three h6 {
   color: white;
+  font-size: 14px;
+  padding-top: 10%;
 }
 #three:hover {
-  height: 18rem;
+  height: 20rem;
+  font-stretch: 20px;
 }
 #table__column {
   background: #b92b27; /* fallback for old browsers */
@@ -194,6 +218,11 @@ tr:nth-child(odd) {
 }
 #form__column {
   background: #b92b27; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #1565c0,
+    #b92b27
+  ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
     #1565c0,
@@ -206,11 +235,124 @@ tr:nth-child(odd) {
 }
 #form__column:hover {
   height: 20rem;
-  width: 30rem;
+  width: 2%;
+  cursor: pointer;
 }
 
 #privacy-policy {
   color: #131313;
   height: 10rem;
   background: #131313;
+}
+@media screen and (max-width: 943px) {
+  .navbar {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    opacity: 2;
+    position: absolute;
+    z-index: 999;
+  }
+
+  #logo {
+    font-size: 20px;
+    align-self: center;
+    justify-self: center;
+    padding-left: 5%;
+  }
+  .nav-function {
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  .nav-togglebar {
+    /* position: relative; */
+    width: 35px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4.5px;
+    justify-items: center;
+    align-content: center;
+  }
+  #menu-bars.is-active .nav-togglebar:nth-child(2) {
+    opacity: 0;
+  }
+  #menu-bars.is-active .nav-togglebar:nth-child(1) {
+    opacity: 1;
+    transform: translateY(8px) rotate(45deg);
+  }
+  #menu-bars.is-active .nav-togglebar:nth-child(3) {
+    opacity: 1;
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .menu {
+    position: absolute;
+    text-align: none;
+    background: #131313;
+    width: 100%;
+    /* margin-top: 0.8rem; */
+    justify-content: center;
+    align-items: center;
+    justify-items: space-between;
+    overflow: hidden;
+    opacity: 0;
+    margin-top: -1000px;
+    padding-top: 80%;
+  }
+  .menu.inactive {
+    position: absolute;
+    text-align: none;
+    background: #131313;
+    width: 100%;
+    /* margin-top: 0.8rem; */
+    justify-content: center;
+    align-items: center;
+    justify-items: space-between;
+    overflow: hidden;
+    opacity: 0;
+    margin-top: -1000px;
+    padding-top: 80%;
+  }
+  #menu_list {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu li {
+    display: table;
+    width: 100%;
+  }
+
+  .menu li a {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto 35%;
+  }
+  .menu.active {
+    text-align: none;
+    background: #131313;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    opacity: 1;
+    padding-top: 80%;
+    margin-top: 10px;
+    transform: translate(0.3s);
+    transition: all 0.6s ease;
+  }
+  #container_id {
+    margin-top: 15rem;
+  }
+  #onlydesktop {
+    display: none;
+  }
+}
+@media screen and (max-width: 483) {
+  #form__column:hover {
+    height: 20rem;
+    width: 0;
+  }
 }
