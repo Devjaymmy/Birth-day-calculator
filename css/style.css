@@ -16,19 +16,13 @@
   padding-left: 5rem;
   z-index: 1;
   background: #1e9600; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #ff0000,
-    #fff200,
-    #1e9600
-  ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
     #ff0000,
     #fff200,
     #1e9600
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -201,11 +195,6 @@ tr:nth-child(odd) {
 }
 #form__column {
   background: #b92b27; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #1565c0,
-    #b92b27
-  ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
     #1565c0,
