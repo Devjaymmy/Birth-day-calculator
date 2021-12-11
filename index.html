@@ -2,37 +2,195 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Dev-Jaymmy solutions</title>
+    <link rel="stylesheet" href="css/style.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
     />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-grid.css" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
   </head>
-  <body>
-    <div class="container1">
-        <img src="https://media.istockphoto.com/vectors/loyalty-program-is-a-concept-man-and-a-woman-receive-a-gift-for-using-vector-id1211929822?k=20&m=1211929822&s=612x612&w=0&h=qXmijz6-isI8i-h-oVtnC0MrcUq1pAJJzYkvGo9ePYE=" class="logo1">
-        
-        <div class="navbar1">
-          
-          
-          <div class="nav1">
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">services</a></li>
-              <li><a href="#">pricing</a></li>
-              <li><a href="#">FAQ</a></li>
-            </ul>
-          </div>
+  <body
+    style="
+      background-color: #ffffff;
+      background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+    "
+  >
+    <div class="navbar" id="nav__bar">
+      <label for="logo" id="logo">Dev-Jaymmy solutions</label>
+      <div class="nav" id="nav__menu">
+        <ul class="menu" id="menu__list">
+          <li id="home__menu"><a href="#home">home</a></li>
+          <li id="home__menu"><a href="#one">about</a></li>
+          <li id="home__menu"><a href="#table__column">Akan-table</a></li>
+          <li id="home__menu"><a href="#form__column">execute</a></li>
+          <li id="home__menu"><a href="#FAQ">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+    <h5>
+      Tired of scrolling through the calendar to find the day of the week you
+      were born? Say no more because we got you covered :
+    </h5>
+    <div id="container__id" class="container">
+      <div id="row__id" class="row">
+        <div id="one" class="col">
+          <ul>
+            <strong>Requirements</strong>
+            <br /><br />
+
+            <li>your birthday date</li>
+            <li>your birthday month</li>
+            <li>your birthday year</li>
+            <li>your gender</li>
+          </ul>
+        </div>
+        <div id="two" class="col">
+          <ul>
+            <strong>usage</strong>
+            <br /><br />
+            <li>input your details</li>
+            <li>click submit</li>
+            <li>your Akan name will be displayed</li>
+          </ul>
+        </div>
+        <div id="three" class="col">
+          <h6>
+            <br />
+            I guess you are wondering what an akan name is; Akan names are
+            derived from Ghanian culture. Frequently in Ghana, children are
+            given their first name as a 'day name' which corresponds to the day
+            in the week they were born. below are Ghanian day names
+          </h6>
         </div>
       </div>
+    </div>
+    <h4 style="text-align: center; margin-top: 3rem">
+      Akan names according to days
+    </h4>
+    <div class="container" id="table">
+      <div class="row" id="table__row">
+        <div id="table__column" class="col">
+          <table>
+            <tr>
+              <th>Day of the week</th>
+              <th>Akan name: Gender male</th>
+              <th>Akan name: Gender female</th>
+            </tr>
+            <tr>
+              <td>Sunday</td>
+              <td>Kwasi</td>
+              <td>Akosua</td>
+            </tr>
+            <tr>
+              <td>Monday</td>
+              <td>Kwadwo</td>
+              <td>Adwoa</td>
+            </tr>
+            <tr>
+              <td>Tuesday</td>
+              <td>Kwabena</td>
+              <td>Abenaa</td>
+            </tr>
+            <tr>
+              <td>Wednesday</td>
+              <td>Kwaku</td>
+              <td>Akua</td>
+            </tr>
+            <tr>
+              <td>Thursday</td>
+              <td>Yow</td>
+              <td>Yaa</td>
+            </tr>
+            <tr>
+              <td>Friday</td>
+              <td>Kofi</td>
+              <td>Afua</td>
+            </tr>
+            <tr>
+              <td>Saturday</td>
+              <td>Kwame</td>
+              <td>Ama</td>
+            </tr>
+          </table>
+          <h5>Dev-Jaymmy desktop page</h5>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="form__id">
+      <div class="row" id="form__row">
+        <div class="col" id="form__column">
+          <input
+            style="width: 8rem"
+            id="date"
+            type="number"
+            step="2"
+            min="1"
+            max="31"
+            placeholder="date of birth"
+          />
+          <input
+            style="width: 8rem"
+            id="month"
+            type="number"
+            min="1"
+            max="12"
+            placeholder="month of birth"
+          />
+          <input
+            style="width: 10rem"
+            id="year"
+            type="number"
+            min="1900"
+            step="4"
+            max="2022"
+            maxlength="2"
+            placeholder="year of birth"
+          />
+          <br />
+          <select name="gender" id="gender">
+            <option value="male">male</option>
+            <option value="female">female</option>
+          </select>
+          <br /><br />
+          <button
+            onclick="akhaName()"
+            id="btn"
+            style="
+              background: #f12711; /* fallback for old browsers */
+              background: -webkit-linear-gradient(
+                to right,
+                #f5af19,
+                #f12711
+              ); /* Chrome 10-25, Safari 5.1-6 */
+              background: linear-gradient(
+                to right,
+                #f5af19,
+                #f12711
+              ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+              border-radius: 1rem;
+              height: 4rem;
+              color: aliceblue;
+              justify-content: center;
+              align-self: center;
+            "
+          >
+            check your akhan name
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <div id="footer__row">
+        <div id="privacy-policy">ghgfjhgf</div>
+      </div>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>

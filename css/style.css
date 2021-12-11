@@ -1,0 +1,228 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.navbar {
+  background-color: #131313;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#logo {
+  font-size: 30px;
+  padding-left: 5rem;
+  z-index: 1;
+  background: #1e9600; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ff0000,
+    #fff200,
+    #1e9600
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ff0000,
+    #fff200,
+    #1e9600
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.nav {
+  text-align: right;
+  transition: all 0.4s ease;
+  padding-right: 5%;
+}
+.nav ul {
+  float: right;
+  flex: 1;
+  justify-content: space-between;
+}
+.nav ul li {
+  display: inline-block;
+  margin: 20px;
+  cursor: pointer;
+}
+.nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+.nav ul li a:hover {
+  color: blueviolet;
+  cursor: pointer;
+}
+#one {
+  background: #b92b27; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #1565c0,
+    #b92b27
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #1565c0,
+    #b92b27
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  height: 15rem;
+  padding: 5px 5px 5px 5px;
+  border-radius: 10px;
+  width: 22%;
+  margin: 50px 1% 5px 1%;
+  float: left;
+  position: relative;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  cursor: pointer;
+  text-align: center;
+}
+#one h4 {
+  color: white;
+}
+#one:hover {
+  height: 18rem;
+}
+#two {
+  background: #b92b27; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #1565c0,
+    #b92b27
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #1565c0,
+    #b92b27
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  height: 15rem;
+  padding: 5px 5px 5px 5px;
+  border-radius: 10px;
+  width: 22%;
+  margin: 50px 1% 5px 1%;
+  float: left;
+  position: relative;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  cursor: pointer;
+  text-align: center;
+}
+#two h4 {
+  color: white;
+}
+#two:hover {
+  height: 18rem;
+}
+#three {
+  background: #b92b27; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #1565c0,
+    #b92b27
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #1565c0,
+    #b92b27
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  height: 15rem;
+  padding: 5px 5px 5px 5px;
+  border-radius: 10px;
+  width: 22%;
+  margin: 50px 1% 5px 1%;
+  float: left;
+  position: relative;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  cursor: pointer;
+  text-align: center;
+}
+#three h4 {
+  color: white;
+}
+#three:hover {
+  height: 18rem;
+}
+#table__column {
+  background: #b92b27; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #1565c0,
+    #b92b27
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #1565c0,
+    #b92b27
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 400px;
+  border-radius: 0.25rem;
+  transition: all 0.3s ease;
+  margin: 6rem 0;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table td,
+table th {
+  border: 1px solid #030303;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+tr:nth-child(odd) {
+  color: #dddddd;
+}
+#table__column h5 {
+  text-align: center;
+  color: #fff;
+  justify-content: center;
+  padding-top: 1.5rem;
+}
+#form__column:hover {
+  height: 20rem;
+}
+#form__id {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#form__column {
+  background: #b92b27; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #1565c0,
+    #b92b27
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #1565c0,
+    #b92b27
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 16rem;
+  border-radius: 2rem;
+  transition: all 0.5s ease;
+  padding-top: 20%;
+}
+#form__column:hover {
+  height: 20rem;
+  width: 30rem;
+}
+
+#privacy-policy {
+  color: #131313;
+  height: 10rem;
+  background: #131313;
+}
