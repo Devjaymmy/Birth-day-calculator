@@ -65,6 +65,10 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+#calendar {
+  width: 48px;
+  height: 48px;
+}
 #container_id {
   margin-top: auto;
 }
@@ -371,8 +375,24 @@ tr:nth-child(odd) {
     transform: translate(0.3s);
     transition: all 0.6s ease;
   }
+
+  #top__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+    height: max-content;
+  }
+
+  #calendar {
+    height: 140px;
+    width: 140px;
+    margin-top: 23rem;
+    position: absolute;
+  }
+
   #container_id {
-    margin-top: 15rem;
+    margin-top: 14rem;
   }
   #onlydesktop {
     display: none;
