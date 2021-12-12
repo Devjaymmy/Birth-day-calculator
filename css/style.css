@@ -391,6 +391,9 @@ tr:nth-child(odd) {
   #rights {
     font-size: 14px;
   }
+  #three:hover {
+    height: 25rem;
+  }
 }
 @media screen and (max-width: 483) {
   #form__column:hover {
