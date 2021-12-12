@@ -243,6 +243,34 @@ tr:nth-child(odd) {
   color: #131313;
   height: 10rem;
   background: #131313;
+  display: absolute;
+  justify-content: space-between;
+  padding: 5% 40%;
+}
+#copyright {
+  background: #fff;
+  width: auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#rights {
+  background: #fff;
+  width: auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#base {
+  background: linear-gradient(
+    to right,
+    #ff0000,
+    #fff200,
+    #1e9600
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 @media screen and (max-width: 943px) {
   .navbar {
@@ -348,6 +376,20 @@ tr:nth-child(odd) {
   }
   #onlydesktop {
     display: none;
+  }
+  #privacy-policy {
+    color: #131313;
+    height: 15rem;
+    background: #131313;
+    display: absolute;
+    justify-content: space-between;
+    padding: 10% 15%;
+  }
+  #copyright {
+    font-size: 14px;
+  }
+  #rights {
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 483) {
